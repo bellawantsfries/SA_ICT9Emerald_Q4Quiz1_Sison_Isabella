@@ -1,0 +1,35 @@
+body {background-color: #e8dcd0; color: #50311d; 
+    background-image: url('https://img.freepik.com/premium-photo/beige-paper-background-texture-high-resolution-photo_463999-2382.jpg');}
+
+img {width: 350px; border: #91683c 2px solid; margin: auto;}
+
+th {border-color: black; color: #50311d}
+
+h1 {margin: auto; font-family: sans-serif; text-align: center;} 
+
+table {width: 100%; border-collapse: collapse; margin: 2.5px; border-color: #91683c;}
+
+tr {border: #91683c 5px solid; border-radius: 100%}
+
+td {vertical-align: top; padding: 10px; border-color: black;}
+
+div {padding: 5px}
+
+.container {display: flex; align-items: center; height: 200px}
+
+.image-container {width: 100%; overflow: hidden; border-radius: 8px 8px 0 0;}
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .text-container {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 0 0 8px 8px;}
+
+        p {
+            margin: 15px;
+            color: #555;
+        }

@@ -1,0 +1,7 @@
+body    {background-color: #8A6151;}       
+table {border-color: #6F5043;background-color: #DEB89D; letter-spacing: 2px} 
+th {font-size: 20px; font-weight: bold;color: #6F5043; background-color: #FAEAD3; text-align: center;
+letter-spacing: 0;}
+td {background-color: #FAEAD3; letter-spacing: 1px;}
+#backToTopButton {position: fixed;bottom: 20px;right: 20px;z-index: 99;background-color: #FFF5E5;color: #FAEAD3; 
+font: sans-serif;border: none; border-radius: 50%; padding: 10px 20px; cursor: pointer;}

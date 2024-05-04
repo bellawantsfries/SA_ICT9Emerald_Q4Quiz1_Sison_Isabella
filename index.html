@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> bella's login ★ </title>
+  <style type="text/css">
+    
+    .container {
+        background-color: #FEFBBD;
+        width: 25%;
+        margin: auto;
+        margin-top: 55px;
+        text-align: center;
+        padding: 20px;
+        border-radius: 30px;
+        border: solid 7px #FFDB58;
+    }
+
+    .logour {
+        width: 70%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border-radius: 20px;
+    }
+
+  </style>
+</head>
+
+
+<body style="background-image: url(https://static.vecteezy.com/system/resources/previews/009/924/602/original/cute-pink-abstract-minimal-background-perfect-for-wallpaper-backdrop-postcard-background-vector.jpg); background-size: cover;">
+
+<div class="container">
+    <img class="logour" src="bellaeyellowlogo.png" alt="Profile Image">
+    <form id="loginForm">
+        <label for="user">Email:</label><br>
+        <input type="email" id="user" name="user" required><br><br>
+        <label for="pass">Password:</label><br>
+        <input type="password" id="pass" name="pass" required><br><br>
+        <button class="btn button" style="background-color: #FFDBD1; margin-bottom: 15px;" type="submit">Log in</button>
+        <button type="button" class="btn btn-light" style="background-color: #F3EDC8; margin-bottom: 15px;" onclick="cancelLogin()">Cancel</button>
+    </form>
+
+    <p> <i>P.S. Email is "bellasison@gmail.com" and password is "0328" :) </p>
+
+</div>
+
+<script>
+document.getElementById("loginForm").addEventListener("submit", auth);
+
+function auth(event) {
+    event.preventDefault();
+
+    var user = document.getElementById("user").value;
+    var pass = document.getElementById("pass").value;
+
+    if (user === "bellasison@gmail.com" && pass === "0328") {
+        window.location.href = "sison_mainpage.html";
+      } 
+
+      else if (user === "" || pass === "") {
+          alert("User and password are needed.");
+        } 
+
+        else {
+          alert("Invalid user or password.");
+        }
+
+      }
+
+      function cancelLogin() {
+        alert("Login cancelled. Don't give up on me. :(");
+      }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>	
+
+	</body>
+</html>
